@@ -1,4 +1,7 @@
-# Visit https://docs.rilldata.com/reference/project-files/sources to learn more about Rill source files.
+# Source YAML
+# Reference documentation: https://docs.rilldata.com/reference/project-files/sources
 
-type: "duckdb"
-sql: SELECT * FROM read_csv('s3://nyc-tlc/misc/taxi _zone_lookup.csv', auto_detect=true, ignore_errors=1, header=true)
+type: source
+
+connector: "duckdb"
+sql: "select * from read_csv('data/taxi_zone_lookup.csv', auto_detect=true, ignore_errors=1, header=true)"
