@@ -1,0 +1,76 @@
+# Metrics view YAML
+# Reference documentation: https://docs.rilldata.com/reference/project-files/dashboards
+# This file was generated using AI.
+
+version: 1
+type: metrics_view 
+
+display_name: NYC Trips Model 2 Metrics
+model: nyc_trips_model2
+timeseries: request_datetime
+
+dimensions:
+  - name: pickup_zone
+    display_name: Pickup Zone
+    column: pickup_zone
+  - name: pickup_borough
+    display_name: Pickup Borough
+    column: pickup_borough
+  - name: dropoff_zone
+    display_name: Dropoff Zone
+    column: dropoff_zone
+  - name: dropoff_borough
+    display_name: Dropoff Borough
+    column: dropoff_borough
+
+measures:
+  - name: total_trips_measure
+    display_name: Total Trips
+    expression: COUNT(*)
+    description: Total number of trips recorded in the dataset.
+    format_preset: humanize
+  - name: average_trip_miles_measure
+    display_name: Average Trip Miles
+    expression: AVG(trip_miles)
+    description: Average distance covered per trip in miles.
+    format_preset: humanize
+  - name: total_trip_miles_measure
+    display_name: Total Trip Miles
+    expression: SUM(trip_miles)
+    description: Total distance covered by all trips in miles.
+    format_preset: humanize
+  - name: average_trip_time_measure
+    display_name: Average Trip Time
+    expression: AVG(trip_time)
+    description: Average duration of trips in minutes.
+    format_preset: humanize
+  - name: total_driver_pay_measure
+    display_name: Total Driver Pay
+    expression: SUM(driver_pay)
+    description: Total amount paid to drivers for all trips.
+    format_preset: humanize
+  - name: average_driver_pay_measure
+    display_name: Average Driver Pay
+    expression: AVG(driver_pay)
+    description: Average amount paid to drivers per trip.
+    format_preset: humanize
+  - name: total_tips_measure
+    display_name: Total Tips
+    expression: SUM(tips)
+    description: Total amount of tips received for all trips.
+    format_preset: humanize
+  - name: average_tips_measure
+    display_name: Average Tips
+    expression: AVG(tips)
+    description: Average amount of tips received per trip.
+    format_preset: humanize
+  - name: max_trip_miles_measure
+    display_name: Maximum Trip Miles
+    expression: MAX(trip_miles)
+    description: Maximum distance covered in a single trip in miles.
+    format_preset: humanize
+  - name: min_trip_time_measure
+    display_name: Minimum Trip Time
+    expression: MIN(trip_time)
+    description: Minimum duration of a trip in minutes.
+    format_preset: humanize
