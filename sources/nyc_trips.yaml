@@ -4,4 +4,5 @@
 type: source
 
 connector: "duckdb"
-sql: "SELECT request_datetime, trip_miles, trip_time, driver_pay, tips, PULocationID, DOLocationID FROM read_parquet('data/fhvhv_tripdata_2023-05.parquet')"
+# sql: "SELECT request_datetime, trip_miles, trip_time, driver_pay, tips, PULocationID, DOLocationID FROM read_parquet('data/fhvhv_tripdata_2023-05.parquet')"
+sql: "SELECT request_datetime, trip_miles, trip_time, driver_pay, tips, PULocationID, DOLocationID FROM read_parquet('https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2023-05.parquet')"

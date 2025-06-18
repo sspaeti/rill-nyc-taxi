@@ -4,4 +4,7 @@
 type: source
 
 connector: "duckdb"
-sql: "select * from read_csv('data/taxi_zone_lookup.csv', auto_detect=true, ignore_errors=1, header=true)"
+# local
+# sql: "select * from read_csv('data/taxi_zone_lookup.csv', auto_detect=true, ignore_errors=1, header=true)"
+remote
+sql: "select * from read_csv('https://d37ci6vzurychx.cloudfront.net/misc/taxi+_zone_lookup.csv', auto_detect=true, ignore_errors=1, header=true)"
