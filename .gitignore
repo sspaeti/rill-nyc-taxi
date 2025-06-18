@@ -1,4 +1,6 @@
 .DS_Store
+data/
+iceberg-catalog/
 
 # Rill
 .env
