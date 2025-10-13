@@ -1,0 +1,10 @@
+type: connector
+driver: duckdb
+boot_queries: |
+  INSTALL ICEBERG;
+  LOAD ICEBERG;
+  SET unsafe_enable_version_guessing = true;
+
+sql: |
+  SELECT count(*)
+  FROM iceberg_scan('/Users/sspaeti/Documents/git/de/rill-nyc-taxi/iceberg-catalog/default.db/taxi_dataset', allow_moved_paths = true)

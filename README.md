@@ -2,12 +2,6 @@
 
 Rill demo project showing an interactive, exploratory dashboard of NYC Taxi and Limousine trip record data. This demo showcases Rill's capabilities for creating fast, interactive dashboards and is used for blog demonstrations on [rilldata.com/blog](https://rilldata.com/blog).
 
-### MCP and AI agents
-Latest changes was maded to use agentic workflow with Rill MCP (see [.mcp.json](.mcp.json) for claude code setup) and pre-defined `ai_instructions` to guardrail the AI models.
-
-> **This repo got updated
-> If you come from the [Has Self-Serve BI Finally Arrived Thanks to AI?](https://www.ssp.sh/blog/self-service-bi-ai/) article, make sure to check out [branch v1](https://github.com/sspaeti/rill-nyc-taxi/tree/v1).
-
 ## Data Sources
 
 This project uses two main data sources:
