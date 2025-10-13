@@ -1,9 +1,0 @@
-connectors/iceberg.yaml
----
-
-type: connector
-driver: duckdb
-boot_queries: |
-  INSTALL ICEBERG;
-  LOAD ICEBERG;
-  SET unsafe_enable_version_guessing = true;
