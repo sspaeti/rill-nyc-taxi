@@ -4,9 +4,8 @@
       "type": "stdio",
       "command": "npx",
       "args": [
-        "-y",
         "mcp-remote",
-        "http://localhost:9009/mcp/sse"
+        "http://localhost:9009/mcp"
       ],
       "env": {}
     }

@@ -2,7 +2,12 @@
   "permissions": {
     "allow": [
       "mcp__rill__list_metrics_views",
-      "mcp__rill__get_metrics_view"
+      "mcp__rill__get_metrics_view",
+      "mcp__rill__query_metrics_view_time_range",
+      "mcp__rill__query_metrics_view",
+      "Bash(rill query:*)",
+      "mcp__rill__query_metrics_view_summary",
+      "Bash(rill project:*)",
     ]
   },
   "enableAllProjectMcpServers": true,

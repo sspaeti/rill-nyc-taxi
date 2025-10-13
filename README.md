@@ -2,8 +2,27 @@
 
 Rill demo project showing an interactive, exploratory dashboard of NYC Taxi and Limousine trip record data. This demo showcases Rill's capabilities for creating fast, interactive dashboards and is used for blog demonstrations on [rilldata.com/blog](https://rilldata.com/blog).
 
+## Claude or AI Setup
 ### MCP and AI agents
 Latest changes was maded to use agentic workflow with Rill MCP (see [.mcp.json](.mcp.json) for claude code setup) and pre-defined `ai_instructions` to guardrail the AI models.
+
+### Claude Desktop
+You can add the MCP configuration to Claude Desktop in `~/.config/Claude/claude_desktop_config.json` with the following configs:
+```json
+{
+  "mcpServers": {
+    "rill": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "http://localhost:9009/mcp/sse"
+      ]
+    }
+  },
+  "globalShortcut": ""
+}
+
+```
 
 > **This repo got updated
 > If you come from the [Has Self-Serve BI Finally Arrived Thanks to AI?](https://www.ssp.sh/blog/self-service-bi-ai/) article, make sure to check out [branch v1](https://github.com/sspaeti/rill-nyc-taxi/tree/v1).
