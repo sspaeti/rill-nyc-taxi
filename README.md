@@ -1,4 +1,4 @@
-# rill-nyc-taxi
+# Rill MCP Demo Project
 
 Rill demo project showing an interactive, exploratory dashboard of NYC Taxi and Limousine trip record data. This demo showcases Rill's capabilities for creating fast, interactive dashboards and is used for blog demonstrations on [rilldata.com/blog](https://rilldata.com/blog).
 
