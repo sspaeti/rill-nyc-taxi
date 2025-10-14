@@ -4,15 +4,14 @@
 
 version: 1
 type: metrics_view 
-
-display_name: NYC Trips Model 2 Metrics
+title: New York Transit Metrics 
 model: nyc_trips_model2
 timeseries: request_datetime
 
 dimensions:
   - name: pickup_zone
     display_name: Pickup Zone
-    column: pickup_zone
+    expression: Upper(pickup_zone)
   - name: pickup_borough
     display_name: Pickup Borough
     column: pickup_borough

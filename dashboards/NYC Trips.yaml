@@ -1,0 +1,10 @@
+# Explore YAML
+# Reference documentation: https://docs.rilldata.com/reference/project-files/explore-dashboards
+
+type: explore
+
+display_name: "NYC Trips Model 2 Metrics dashboard"
+metrics_view: nyc_trips_model2_metrics
+
+dimensions: '*'
+measures: '*'

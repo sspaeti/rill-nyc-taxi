@@ -24,7 +24,8 @@ You can add the MCP configuration to Claude Desktop in `~/.config/Claude/claude_
 
 ```
 
-> **This repo got updated
+> **This repo got updated**
+> 
 > If you come from the [Has Self-Serve BI Finally Arrived Thanks to AI?](https://www.ssp.sh/blog/self-service-bi-ai/) article, make sure to check out [branch v1](https://github.com/sspaeti/rill-nyc-taxi/tree/v1).
 
 ## Data Sources
