@@ -2,6 +2,19 @@
 
 Rill demo project showing an interactive, exploratory dashboard of NYC Taxi and Limousine trip record data. This demo showcases Rill's capabilities for creating fast, interactive dashboards and is used for blog demonstrations on [rilldata.com/blog](https://rilldata.com/blog).
 
+
+## Installation Rill and this project
+
+```
+# install rill
+curl https://rill.sh | sh
+## clone repo
+git clone git@github.com:sspaeti/rill-nyc-taxi.git && cd rill-nyc-taxi
+# start dashbaord
+rill start
+```
+
+
 ## Claude or AI Setup
 ### MCP and AI agents
 Latest changes was maded to use agentic workflow with Rill MCP (see [.mcp.json](.mcp.json) for claude code setup) and pre-defined `ai_instructions` to guardrail the AI models.
