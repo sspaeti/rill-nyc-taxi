@@ -73,3 +73,23 @@ measures:
     expression: MIN(trip_time)
     description: Minimum duration of a trip in minutes.
     format_preset: humanize
+  - name: average_speed_measure
+    display_name: Average Speed
+    expression: AVG(trip_miles / NULLIF(trip_time / 60, 0))
+    description: Average speed in miles per hour across all trips.
+    format_preset: humanize
+  - name: tip_percentage_measure
+    display_name: Tip Percentage
+    expression: AVG((tips / NULLIF(driver_pay, 0)) * 100)
+    description: Average tip percentage relative to driver pay.
+    format_preset: humanize
+  - name: median_trip_miles_measure
+    display_name: Median Trip Miles
+    expression: MEDIAN(trip_miles)
+    description: Median distance covered per trip in miles.
+    format_preset: humanize
+  - name: average_revenue_per_trip_measure
+    display_name: Average Revenue per Trip
+    expression: AVG(driver_pay + tips)
+    description: Average total revenue (driver pay plus tips) per trip.
+    format_preset: humanize
